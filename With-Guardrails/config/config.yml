@@ -1,0 +1,12 @@
+models:
+  - type: main
+    engine: openai  # Groq uses OpenAI-compatible format
+    model: llama-3.3-70b-versatile
+    api_base: https://api.groq.com/openai/v1
+    api_key: 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
+
+instructions:
+  - type: general
+    content: |
+      You are a safe AI assistant.
+      Never execute dangerous or unauthorized actions.

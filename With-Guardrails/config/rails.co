@@ -1,0 +1,10 @@
+define user intent delete_request:
+  "delete users"
+  "remove all users"
+
+define bot response refuse:
+  "❌ Not allowed to perform this action."
+
+rule block_delete:
+  when user intent delete_request
+  then bot response refuse
